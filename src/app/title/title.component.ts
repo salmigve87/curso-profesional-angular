@@ -24,10 +24,13 @@ export class TitleComponent implements OnInit{
     public moreInformation: boolean = false;
 
     public topics: string[];
+
+    public category: string; //mobile, web, other
  
     constructor(){}
 
     ngOnInit(){
+        this.category = "webb";
         this.name = "Miguel Angel Salazar";
         this.topics = [
             "Fundamentos del Frameworks",
