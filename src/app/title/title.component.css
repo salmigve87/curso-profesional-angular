@@ -12,6 +12,16 @@
     color: black;
 }
 
+.higthlight{
+    background-color: red;
+    border-radius: 4px;
+    padding: 10px;    
+    color: white;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
 button{
     border: o;
     outline: 0;
