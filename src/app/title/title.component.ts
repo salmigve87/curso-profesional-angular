@@ -51,5 +51,4 @@ export class TitleComponent implements OnInit{
     toggleMoreInformation(){
         this.moreInformation = !this.moreInformation;
     }
-
 }
