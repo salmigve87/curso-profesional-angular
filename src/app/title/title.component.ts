@@ -9,6 +9,6 @@ import { templateJitUrl } from '../../../node_modules/@angular/compiler';
     templateUrl: 'title.component.html'
 })
 export class TitleComponent{
-
+    public name: string = "Miguel";
 
 }
