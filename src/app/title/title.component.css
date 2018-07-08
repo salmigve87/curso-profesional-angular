@@ -5,11 +5,18 @@
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgb(0,0, 0.2);
     padding: 1em;
+    width: 400px;;
 }
 
 :host-context(.ligth) h1{
     background-color: #eee;
     color: black;
+}
+a{
+    display: inline-block;
+    margin: 1em 0;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .higthlight{

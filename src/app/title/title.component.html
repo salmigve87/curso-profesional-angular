@@ -1,5 +1,17 @@
 <h1> Curso Angular</h1>
-<h2> Alumno: {{ name }}</h2>
+<h3> Alumno: {{ name }}</h3>
+
+<div>
+    <a>Mas informacion
+        <!-- <i class="fa " [class.fa-chevron-down] = "!moreInformation" [class.fa-chevron-up] = "moreInformation"></i> -->
+        <i class="fa " [ngClass] = "{'fa-chevron-down': !moreInformation, 'fa-chevron-up': moreInformation}"></i>
+
+    </a>
+    <p *ngIf="moreInformation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil in veritatis sequi nulla eaque fugit libero numquam,
+        atque exercitationem?</p>
+
+</div>
+
 <p *ngIf="!isAvailable; else available">Lanzamiento: 25 Dic 2018</p>
 
 <ng-template #available>

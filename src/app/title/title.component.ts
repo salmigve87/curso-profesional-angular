@@ -21,18 +21,15 @@ export class TitleComponent implements OnInit{
 
     public isAvailable: boolean = true;
 
-    public css_clases: string[] = ['active', 'shadow'];
+    public moreInformation: boolean = false;
+ 
     constructor(){}
 
     ngOnInit(){
         this.name = "Miguel Angel Salazar";
         this.edad = 21;
 
-        setTimeout( ()=> this.name = "Miguelito", 3000);
-
-        setTimeout( ()=> this.isAvailable = false, 3000);
-
-        setTimeout( ()=> this.css_clases = ['shadow'], 3000);
+        setTimeout( ()=> this.moreInformation = !this.moreInformation, 3000);
     }
 
     getEdadNombre(): string {
