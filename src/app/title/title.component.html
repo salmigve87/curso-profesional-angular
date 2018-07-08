@@ -1,3 +1,4 @@
 <h1> Curso Angular</h1>
 <h2> {{ name }}</h2>
-<button [disabled]="!isAvailable" [class.active]="!isAvailable" type="button" name="button">Inscribirse</button>
+<button [disabled]="!isAvailable" [ngClass]="css_clases" type="button" name="button">Inscribirse</button>
+<button [disabled]="!isAvailable" [ngClass]="{active: !isAvailable, shadow: !isAvailable}" type="button" name="button">Inscribirse</button>
