@@ -6,7 +6,7 @@ import { Title } from '../../../node_modules/@angular/platform-browser';
 
 // Decorador de la clase TitleCompomnent
 @Component({
-    selector: 'title',
+    selector: 'app-title',
     templateUrl: 'title.component.html',
     //styles: ["h1{font-family: Roboto;}", "h2{text-decoration: underline;}"],
     styleUrls: ["Title.component.css"]

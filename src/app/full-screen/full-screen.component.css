@@ -1,0 +1,8 @@
+.full-screen{
+    display: flex;
+    min-height: 100 vh;
+    min-height: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+}
