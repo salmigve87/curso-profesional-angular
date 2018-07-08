@@ -48,4 +48,8 @@ export class TitleComponent implements OnInit{
         return `${this.name} tiene ${this.edad}`;
     }
 
+    toggleMoreInformation(){
+        this.moreInformation = !this.moreInformation;
+    }
+
 }
