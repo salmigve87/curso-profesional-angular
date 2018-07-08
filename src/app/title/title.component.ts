@@ -6,9 +6,7 @@ import { templateJitUrl } from '../../../node_modules/@angular/compiler';
 // Decorador de la clase TitleCompomnent
 @Component({
     selector: 'title',
-    template: `
-        <h1>Curso Profesional Angular</h1>
-    `
+    templateUrl: 'title.component.html'
 })
 export class TitleComponent{
 
