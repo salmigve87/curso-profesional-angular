@@ -1,12 +1,15 @@
 // Elemento principal para los componentes de angular, se instala automaticamente con los autogeneradores
 import { Component, OnInit } from '@angular/core';
 import { templateJitUrl } from '../../../node_modules/@angular/compiler';
+import { Title } from '../../../node_modules/@angular/platform-browser';
 
 
 // Decorador de la clase TitleCompomnent
 @Component({
     selector: 'title',
-    templateUrl: 'title.component.html'
+    templateUrl: 'title.component.html',
+    //styles: ["h1{font-family: Roboto;}", "h2{text-decoration: underline;}"],
+    styleUrls: ["Title.component.css"]
 })
 
 // El OnInit es una interfaz que ayuda a la inyeccion de dependencias, incializando las variables desde alli en principio
