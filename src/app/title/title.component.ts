@@ -10,5 +10,11 @@ import { templateJitUrl } from '../../../node_modules/@angular/compiler';
 })
 export class TitleComponent{
     public name: string = "Miguel";
+    public edad: number = 31;
+    public edades: number[]; //Asi declaramos arreglos, de cualquier tipo
+
+    getEdadNombre(): string {
+        return `${this.name} tiene ${this.edad}`;
+    }
 
 }
