@@ -11,3 +11,17 @@
     background-color: #eee;
     color: black;
 }
+
+button{
+    border: o;
+    outline: 0;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.active{
+    background-color: rgb(50,50,200);
+}
+button:not(.active){
+    opacity: 0.56;;
+}
