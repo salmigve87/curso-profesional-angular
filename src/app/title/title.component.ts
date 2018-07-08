@@ -22,14 +22,23 @@ export class TitleComponent implements OnInit{
     public isAvailable: boolean = true;
 
     public moreInformation: boolean = false;
+
+    public topics: string[];
  
     constructor(){}
 
     ngOnInit(){
         this.name = "Miguel Angel Salazar";
-        this.edad = 21;
+        this.topics = [
+            "Fundamentos del Frameworks",
+            "Componentes",
+            "Directivas",
+            "Animaciones",
+            "Servicios",
+            "RxJS",
+            "Biding"
+        ]
 
-        setTimeout( ()=> this.moreInformation = !this.moreInformation, 3000);
     }
 
     getEdadNombre(): string {

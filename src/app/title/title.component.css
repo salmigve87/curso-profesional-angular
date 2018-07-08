@@ -12,6 +12,10 @@
     background-color: #eee;
     color: black;
 }
+
+h3{
+    margin: 0;
+}
 a{
     display: inline-block;
     margin: 1em 0;

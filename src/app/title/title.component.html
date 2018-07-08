@@ -1,4 +1,10 @@
 <h1> Curso Angular</h1>
+
+<p *ngIf="!isAvailable; else available">Lanzamiento: 25 Dic 2018</p>
+<ng-template #available>
+    <span class="higthlight">Curso Disponible</span>
+</ng-template>
+ 
 <h3> Alumno: {{ name }}</h3>
 
 <div>
@@ -9,14 +15,14 @@
     </a>
     <p *ngIf="moreInformation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil in veritatis sequi nulla eaque fugit libero numquam,
         atque exercitationem?</p>
-
 </div>
 
-<p *ngIf="!isAvailable; else available">Lanzamiento: 25 Dic 2018</p>
+<ul>
+    <li *ngFor = "let topic of topics; index as posicion">{{ posicion+1 }}.- {{ topic }}</li>
+</ul>
 
-<ng-template #available>
-    <span class="higthlight">Curso Disponible</span>
-</ng-template>
+
+
 <div>
     <button [disabled]="!isAvailable" [ngClass]="{active: !isAvailable, shadow: !isAvailable}" type="button" name="button">Inscribirse</button>
 </div>
