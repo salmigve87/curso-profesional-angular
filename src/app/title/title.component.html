@@ -30,6 +30,6 @@
 
 
 <div>
-    <button [disabled]="!isAvailable" [ngClass]="{active: !isAvailable, shadow: !isAvailable}" type="button" name="button">Inscribirse</button>
+    <button [disabled]="!isAvailable || !suscribed" [ngClass]="{active: !isAvailable && suscribed , shadow: !isAvailable}" type="button" name="button">Inscribirse</button>
 </div>
 <!-- <button [disabled]="!isAvailable" [ngClass]="css_clases" type="button" name="button">Inscribirse</button> -->

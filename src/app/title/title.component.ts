@@ -1,5 +1,5 @@
 // Elemento principal para los componentes de angular, se instala automaticamente con los autogeneradores
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { templateJitUrl } from '../../../node_modules/@angular/compiler';
 import { Title } from '../../../node_modules/@angular/platform-browser';
 
@@ -26,6 +26,8 @@ export class TitleComponent implements OnInit{
     public topics: string[];
 
     public category: string; //mobile, web, other
+
+    @Input() suscribed: boolean;
  
     constructor(){}
 

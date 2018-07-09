@@ -28,8 +28,5 @@ export class UserCardComponent implements OnInit {
     this.username = event.target.value;
   }
 
-  userSubscribed(ev: any){
-    console.log("Usuario suscrito");
-    console.log(ev);
-  }
+
 }

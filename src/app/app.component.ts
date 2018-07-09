@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  userSubscribed(ev: any){
+  userSubscribed: boolean = false; 
+
+  subscriptionChanged(ev: any){
     console.log("Usuario suscrito");
-    console.log(ev);
+    this.userSubscribed = ev;
   }
 }
