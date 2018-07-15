@@ -31,6 +31,8 @@ export class TitleComponent implements OnInit{
 
     public price: number = 25;
 
+    public seconds: number = 3600;
+
     @Input() suscribed: boolean;
  
     constructor(){}

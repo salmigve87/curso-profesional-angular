@@ -24,7 +24,9 @@ Es una manera de modificar el formato de la informacion, uno muy normal es json 
         <i class="fa " [ngClass] = "{'fa-chevron-down': !moreInformation, 'fa-chevron-up': moreInformation}"></i>
 
     </a>
-    <p *ngIf="moreInformation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil in veritatis sequi nulla eaque fugit libero numquam,
+    <p *ngIf="moreInformation">
+        <span style="font-weight: bold"> Duracion: {{ seconds | secondsToTimeFormat }}</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil in veritatis sequi nulla eaque fugit libero numquam,
         atque exercitationem?</p>
 </div>
 
