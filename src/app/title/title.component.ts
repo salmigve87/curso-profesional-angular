@@ -19,13 +19,17 @@ export class TitleComponent implements OnInit{
     public edad: number;
     public edades: number[]; //Asi declaramos arreglos, de cualquier tipo
 
-    public isAvailable: boolean = true;
+    public isAvailable: boolean = false ; // se paso a false para poder ver la funcionalidad del launchDate
 
     public moreInformation: boolean = false;
 
     public topics: string[];
 
     public category: string; //mobile, web, other
+
+    public lauchDate: Date;
+
+    public price: number = 25;
 
     @Input() suscribed: boolean;
  
@@ -34,6 +38,7 @@ export class TitleComponent implements OnInit{
     ngOnInit(){
         this.category = "webb";
         this.name = "Miguel Angel Salazar";
+        this.lauchDate = new Date(2018, 11,25);
         this.topics = [
             "Fundamentos del Frameworks",
             "Componentes",
