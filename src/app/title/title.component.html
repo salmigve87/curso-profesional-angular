@@ -16,7 +16,8 @@ Es una manera de modificar el formato de la informacion, uno muy normal es json 
     <span *ngSwitchCase="'other'">Otro Desarrollo</span>
     <span *ngSwitchDefault>No Especificado</span>
 </div>
-<h3> Alumno: {{ name }}</h3>
+<!-- <h3 redBorder> Alumno: {{ name }}</h3> --> <!-- CUando no hacemos BIDING (pasar parametros, se usa son los [] -->
+<h3 [redBorder]="'blue'" [redClass]="'pink-border'"> Alumno: {{ name }}</h3>
 
 <div>
     <a (click)="toggleMoreInformation()">Mas informacion
